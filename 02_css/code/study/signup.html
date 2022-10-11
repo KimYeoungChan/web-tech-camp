@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+      <!-- 힌트: label에 float: left 속성을줘서 만들어보세요 :-) -->
+      <style>
+        li {
+          list-style:none;
+          margin: 10px;
+        }
+        label {
+          width: 70px;
+          line-height: 56px;
+          float: left;
+        }
+        input {
+          width: 150px;
+          height: 50px;
+        }
+        textarea {
+          width: 150px;
+        }
+      </style>
+  <div>
+    <body>
+      <form>
+        <ul>
+          <li>
+            <label for="name">이름 </label>
+            <input type="text" id="name" placeholder="이름을 입력해주세요" />
+          </li>
+          <li>
+            <label for="id">아이디</label>
+            <input type="text" id="id" size="20" />
+          </li>
+          <li>
+            <label for="비밀번호">비밀번호</label>
+            <input type="password" id="비밀번호" size="10" />
+          </li>
+          <li>
+            <label for= "email">이메일</label>
+            <input type="email" id="email" readonly />
+          </li>
+          <li>
+            <label for="addr">주소</label>
+            <textarea cols="20" rows="8" id="addr"></textarea>
+          </li>
+        </ul>
+      </form>
+  </div>
+  </body>
+</html>

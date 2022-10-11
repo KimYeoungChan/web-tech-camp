@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <!-- flexbox 를 이용하여 컨텐츠들을 정렬 해봅시다 -->
+    <style>
+      :root {
+        --form-color:rgb(25, 18, 155);
+      }
+      body {
+        background-color:rgb(242, 242, 242);
+        color:var(--form-color);
+      }
+      .container {
+        background-color:rgb(255,255,255);
+        width:70%;
+        margin:0 auto;
+        border-radius:6px;
+        padding:30px;
+        padding-top:10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .input-wrap {
+        display: flex;
+        flex-direction:column;
+      }
+      .input-wrap label {
+        font-size: 0.8rem;
+      }
+      .input-wrap input {
+        padding:10px 5px;
+        background-color:rgb(249,249,249);
+        border-radius:5px;
+        border:1px solid rgb(228,228,228);
+        margin-bottom: 10px;
+      }
+      .btn-wrap button {
+        width:100%;
+        padding: 10px;
+        background-color:rgb(255,220,103);
+        border-radius:10px;
+        border:none;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <h1>Get Started</h1>
+        <div class="input-wrap">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="이메일을 입력해주세요" />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+          />
+        </div>
+        <div class="btn-wrap">
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .container {
+        background-color:rgb(229, 203, 253);
+        width: 90%;
+        margin:0 auto;
+        display:flex;
+        height: 80vh;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .left-wrap {
+        width:50%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+      }
+      .left-wrap h1 {
+        text-transform: uppercase;
+      }
+      .left-wrap input {
+        border-radius:20px;
+        padding:8px;
+        border:1px solid black;
+        margin-bottom: 20px;
+      }
+      .left-wrap button {
+        width: 50%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color:black;
+        color:blanchedalmond;
+        border:none;
+        margin:20px;
+        cursor: pointer;
+      }
+      .left-wrap button:hover {
+        background-color:blanchedalmond;
+        color:black;
+      }
+      .left-wrap a {
+        text-decoration: none;
+        font-size: 0.5rem;
+        color: black;
+      }
+      .right-wrap {
+        width: 50%;
+        background-image: url("../images/flower.jpg");
+        background-size:cover;
+        background-position:center;
+      }
+      
+    /* 모바일 사이즈일 때 */
+    @media (max-width:767px){
+          .container {
+            flex-direction: column;
+            height: 100vh;
+          }
+          .left-wrap {
+            width: 100%;
+            height: 100%;
+          }
+          .right-wrap {
+            width: 100%;
+            height: 100%;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="left-wrap">
+        <h1>Login</h1>
+        <label for="email" hidden>이메일</label>
+        <input type="email" id="email" placeholder="이메일" />
+        <label for="pw" hidden>비밀번호</label>
+        <input type="password" id="pw" placeholder="비밀번호" />
+        <button type="submit" id="submit-btn">LOGIN</button>
+        <a href="#">회원가입 하시겠습니까?</a>
+      </form>
+      <div class="right-wrap"></div>
+    </div>
+  </body>
+</html>

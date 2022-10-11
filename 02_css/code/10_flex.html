@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      html,
+      body,
+      .container {
+        height: 100%;
+        background-color: rgb(255, 228, 188);
+      }
+      .box {
+        border: 5px solid rgb(64, 64, 64);
+        font-size: 1.3rem;
+        flex-basis:0;
+      }
+      .box1 {
+        background-color: salmon;
+        /* align-self:center; */
+        flex-grow:1;
+      }
+      .box2 {
+        background-color: cornflowerblue;
+        /* align-self:flex-start; */
+        flex-grow:2;
+      }
+      .box3 {
+        background-color: rgb(242, 245, 81);
+        /* align-self:flex-end; */
+        flex-grow:1;
+      }
+      .container {
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        /* flex-wrap:wrap; */
+        /* align-content:space-between; */
+        /* flex-direction:column;
+        align-items:stretch; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; 
+        justify-content:space-around; */
+        /* align-items:stretch;*/
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <p>Box 1️⃣</p>
+        <p>첫 번째 박스 입니다</p>
+      </div>
+      <div class="box box2">
+        <p>Box 2️⃣</p>
+        <p>두 번째</p>
+      </div>
+      <div class="box box3">
+        <p>Box 3️⃣</p>
+        <p>3</p>
+      </div>
+    </div>
+  </body>
+</html>

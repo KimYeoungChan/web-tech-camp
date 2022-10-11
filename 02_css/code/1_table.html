@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 종류</title>
+    <style>
+      /* * {
+        background-color:salmon;
+      } */
+      /* caption, th {
+        color:salmon;
+      } */
+      /* #name {
+        background-color:salmon;
+      } */
+      /* table th {
+         color:saddlebrown;
+      } */
+      /* input[type=email] {
+        background-color:sienna;
+      } */
+      /* .select ~ td {
+        background-color:springgreen;
+      } */
+      /* input:nth-child(2n+1) {
+        background-color:teal;
+      } */
+      /* input:focus {
+        width: 100px;
+        height:100px;
+      } */
+      li:not(#html) {
+        background-color:teal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+      <ul>
+        <li id="html">메뉴 1</li>
+        <li id="css">메뉴 2</li>
+        <li>메뉴 3</li>
+      </ul>
+    </nav> -->
+    <!-- <div>
+      <input type="text">
+      <input type="password">
+      <input type="email">
+      <input type="email">
+      <input type="email">
+      <input type="checkbox">
+    </div> -->
+    <table border="1">
+      <caption>
+        CSS 선택자
+      </caption>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>선택자</th>
+          <th>사용법</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>전체 선택자</td>
+          <td>*</td>
+          <td>*</td>
+        </tr>
+        <tr>
+          <td>태그 선택자</td>
+          <td>태그</td>
+          <td>h1, div</td>
+        </tr>
+        <tr>
+          <td>class 선택자</td>
+          <td>.class</td>
+          <td>기초</td>
+        </tr>
+        <tr>
+          <td>id 선택자</td>
+          <td>#id</td>
+          <td>#red</td>
+        </tr>
+        <tr>
+          <td>자손 선택자</td>
+          <td>선택자 > 선택자</td>
+          <td>table > tbody</td>
+        </tr>
+        <tr>
+          <td>후손 선택자</td>
+          <td>선택자 선택자</td>
+          <td>tavle td</td>
+        </tr>
+        <tr>
+          <td>속성 선택자</td>
+          <td>선택자[속성=값]</td>
+          <td>input[type="text"]</td>
+        </tr>
+        <tr>
+          <td class="select">동위 선택자</td>
+          <td>선택자+선택자</td>
+          <td>.select + td</td>
+        </tr>
+        <tr>
+          <td rowspan="3">구조 선택자</td>
+          <td>선택자:first-child</td>
+          <td>input:first-child</td>
+        </tr>
+        <tr>
+          <td>선택자:last-child</td>
+          <td>input:last-child</td>
+        </tr>
+        <tr>
+          <td>선택자:nth-child(n)</td>
+          <td>input:nth-child(2n+1)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">반응 선택자</td>
+          <td>선택자:active</td>
+          <td>input:active</td>
+        </tr>
+        <tr>
+          <td>선택자:hover</td>
+          <td>input:hover</td>
+        </tr>
+        <tr>
+          <td rowspan="2">상태 선택자</td>
+          <td>선택자:checked</td>
+          <td>input:checked</td>
+        </tr>
+        <tr>
+          <td>선택자:focus</td>
+          <td>input:focus</td>
+        </tr>
+        <tr>
+          <td>부정 선택자</td>
+          <td>선택자:not(선택자)</td>
+          <td>li:not(#html)</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
