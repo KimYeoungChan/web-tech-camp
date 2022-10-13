@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>onchange, onselect</title>
+<style>
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    font-size: larger;
+}
+select{ padding: 5px; }
+</style>
+</head>
+<body>
+
+<fieldset>
+    <input type="radio" name="study" id="html" value="html">
+    <label for="html">html</label>
+
+    <input type="radio" name="study" id="css" value="css">
+    <label for="css">css</label>
+
+    <input type="radio" name="study" id="js" value="js">
+    <label for="js">js</label>
+</fieldset>
+
+<fieldset>
+    <select>
+        <option value="0">-----</option>
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="js">js</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <legend>선택 결과</legend>
+    <textarea id="content"></textarea>
+</fieldset>
+
+<script>
+const studys = document.querySelectorAll('input[name="study"]');
+const select = document.querySelector('select');
+const content = document.getElementById('content');
+
+for(let i=0; i<studys.length; i++){
+    studys[i].onchange = function(){
+        content.value = this.value;
+    }
+}
+
+select.onchange = function(){
+    console.log(this.selectedIndex + ' 번째');
+    content.value = this.value;
+}
+
+content.onselect = function(){
+    if(confirm('선택한 문자열을 복사할까요?')){
+        document.execCommand('copy');
+        alert(this.value + '이 복사되었습니다.');
+    }
+}
+</script>
+</body>
+</html>

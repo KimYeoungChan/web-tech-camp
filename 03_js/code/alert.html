@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert, prompt, confirm</title>
+</head>
+<body>
+<script>
+    // * alert(메세지)
+
+    // alert('반가워요')
+
+
+    // * confirm(메세지)
+
+    // const result = confirm("취소하겠습니까?");
+    // console.log(result)
+
+
+    // * prompt(메세지,기본값)
+
+    // const yourName = prompt("이름을 입력하세요.", "default");
+    // document.write(yourName  + "님 반갑습니다");
+
+    // const study = prompt('수업을 입력하세요(html, css, js, react)')
+
+    // parseInt(study);
+    // console.log(typeof(study))
+    // switch는 여러가지 조건이 있을 경우에 씀.
+    // switch(study) {
+    //     case 'html' : 
+    //         alert('html 수업은 1주차 강의입니다.');
+    //         break;
+    //     case 'css' : 
+	//     			alert('css 수업은 2주차 강의입니다.');
+    //         break;
+    //     case 'js' : 
+	//     			alert('js 수업은 3주차 강의입니다.');
+    //         break;
+    //     case 'react' : 
+    //         alert('react 강의는 8월초에 진행합니다.');
+    //         break;
+    //     default: alert('예정되지 않은 강의입니다.');
+    //  }
+
+    //  if(study!= null) {
+    //     if(study === 'html'||study === 'css' || study === 'js') {
+    //         console.log('7월강의입니다.')
+    //     } else {
+    //         console('8월강의입니다.')
+    //     }
+    // }  else {
+    //     console.log("취소를 눌렀습니다.")
+    //  }
+
+    // 삼한연산자
+    // 참이면 ? 다음 값이 나오고 거짓이면 : 다음 값이 나옴
+
+    const num = prompt('숫자를 입력하세요')
+
+    if(num !== null) {
+        // if(num % 2 === 0)
+        //     alert("짝수입니다 ✌🏻");
+        // else 
+        //     alert("홀수입니다 ☝🏻");
+        (num % 2 === 0) ? alert("짝수입니다 ✌🏻") : alert("홀수입니다 ☝🏻")
+    } else { 
+        alert("사용자가 취소버튼누름");
+    }
+</script>  
+</body>
+</html>
+
+
+
+

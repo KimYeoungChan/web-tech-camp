@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>마우스 이벤트</title>
+<style>
+#box{
+    width: 100px;
+    height: 100px;
+    /* background-color:lightcoral; */
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+</style>
+</head>
+<body>
+<div id="box" 
+    onmouseover="overBox(this)" 
+    onmousedown="downBox(this)" 
+    onmouseup="upBox(this)" 
+    onmouseout="outBox(this)"  
+    onclick="clickBox(this)" 
+    ondblclick="dblclickBox(this)">
+</div>
+
+<script>
+// mouseover
+function overBox(obj){
+    obj.style.backgroundColor = 'green';
+}
+// mouseout
+function outBox(obj){
+    obj.style.backgroundColor = 'lightcoral';
+}
+
+// mousedown
+function downBox(obj){
+    obj.style.backgroundColor = 'yellow';
+}
+// mouseup
+function upBox(obj){
+    obj.style.backgroundColor = 'navy';
+}
+
+
+function clickBox(obj){
+    obj.style.backgroundColor = 'red';
+}
+
+function dblclickBox(obj){
+    obj.style.backgroundColor = 'black';
+}
+</script>    
+</body>
+</html>

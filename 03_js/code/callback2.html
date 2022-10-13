@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>window.onload 이벤트</title>
+<style>
+img{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #888;
+}
+</style>
+</head>
+<body>
+
+<img src="/images/load.jpeg" alt="로딩이미지">
+
+<script>
+    console.log('1');
+
+    window.onload = function(){
+        console.log('2');
+    }
+
+    console.log('3');
+
+    //onresize
+    // window.onresize = function() {
+    //     console.log('크기변경됨')
+    //     console.log(window.innerWidth)
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // const arr = [1,2,3,4,5,6]
+        // const arr1 = ["곰","여우"]
+        // console.log(arr.concat(arr1))
+        // console.log(arr.reverse())
+        // console.log(arr.filter((x) => x > 3));
+        // console.log(arr1.indexOf("여우"))
+        // arr1.push();
+        // console.log(newArr);
+        // arr.push(7)
+        // arr.pop()
+        // arr.shift()
+        // arr.unshift(0)
+        // const newArr = arr.slice(2)
+        // console.log(arr)
+        // console.log(newArr)
+        // console.log(arr1.toString());
+        // newArr = arr.map((x) => x*3)
+        // console.log(newArr);
+
+        // 객체
+        // const obj ={
+        //     name: "길동",
+        //     age : 30,
+        //     gender:"m",
+        //     toDo: ["잠자기", "놀기", "먹기"],
+	    //     say: function() {    //객체 안 프로퍼티로 정의된 함수: 메소드
+	    //         alert('안녕, 나는 짱구야!');
+		//         }
+        // }
+        // console.log(obj.say())
+
+    //     const studentObj = [
+	// 	{
+	// 		name: "길동",
+	// 	  age: 17,
+	// 	  gender: "m"
+	// 	},
+	// 	{
+	// 		name: "태양",
+	// 	  age: 29,
+	// 	  gender: "m"
+	// 	},
+	// 	{
+	// 		name: "상미",
+	// 	  age: 18,
+	// 	  gender: "w"
+	// 	}
+	// ]
+    // console.log(studentObj[1])
+    // console.log(studentObj[2].age)
+
+    // const obj = {
+    //         "user": {
+    //             "title": "UserBasicDetails",
+    //             "type": "object",
+    //             "properties": {
+    //                 "name": {
+    //                 "example": "Tony Stark",
+    //                 "type": "string"
+    //                 },
+    //                 "gender": {
+    //                 "example": "Male",
+    //                 "type": "string"
+    //                 }
+    //             },
+    //             "required": [
+    //                 {
+    //                     "name": "홍길동"
+    //                 },
+    //                 {
+    //                     "gender": "m"
+    //                 }
+    //             ]
+    //         }
+    //     }
+
+    // 홍길동 추출
+    // console.log(obj.user.required[0].name) 
+
+        // 생성자 함수
+        function Person(name, age) {
+        		// 생성자 함수 내부의 this는 생성자 함수가 생성할 인스턴스를 가리킨다.
+            this.name = name;
+            this.age = age;
+            this.personInfo = function() {
+                console.log(`이름: ${this.name}, 나이: ${this.age}세`)
+            }
+        }
+
+        const person1 = new Person('미미', 24);
+        const person2 = new Person('동건', 40);
+
+        console.log(person1);
+        console.log(person2.personInfo());
+
+        
+    </script>
+</body>
+</html>
