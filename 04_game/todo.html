@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>할일목록</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/todo.css">
+  <!-- <script src="/js/main.js"></script> -->
+  <script src="/js/todo.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
+        <ul>
+          <li><a href="todo.html">할일목록</a></li>
+          <li><a href="cacl.html">연산게임</a></li>
+          <li><a href="bird.html">영무잡기</a></li>
+          <li><a href="speed.html">반응속도</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="score-container">
+      <p>칭잔점수:<span>0</span>점</p>
+      <button class="default-btn">점수저장</button>
+    </section>
+    <section>
+      <h2>할일목록</h2>
+      <input class="default-input" type="text" />
+      <button class="addTodoBtn">+</button>
+      <ul id="list-box">
+      </ul>
+    </section>
+  </main>
+  <footer>
+    Copyright @ 2022 ALl Right Reserved.
+  </footer>
+</body>
+</html>
