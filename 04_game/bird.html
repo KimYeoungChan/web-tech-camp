@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>할일목록</title>
+    <title>앵무잡기</title>
     <script src="https://kit.fontawesome.com/3624917c4f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/bird.css">
+    <!-- <link rel="stylesheet" href="css/todo.css"> -->
     <script src="js/score.js" defer></script>
-    <script src="js/todo.js" defer></script>
+    <script src="js/bird.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,21 +25,18 @@
                 <li><a href="bird.html">앵무잡기</a></li>
                 <li><a href="speed.html">반응속도</a></li>
             </ul>
-            <!-- <a href="#" class="toggleBtn"><i class="fas fa-bars"></i></a> -->
+            <a href="#" class="toggleBtn"><i class="fas fa-bars"></i></a>
         </nav>
     </header>
     <main>
         <section class="score-container">
-            <p>칭찬점수:<span id="score-num">0</span>점</p>
+            <p>사냥점수:<span id="score-num">0</span>점</p>
             <button id="saveScoreBtn" class="default-btn">점수저장</button>
         </section>
-        <section>
-            <h2>할일목록</h2>
-            <input class="default-input" type="text" />
-            <button class="addTodoBtn">➕</button>
-            <ul id="list-box">
+        <section class="bg-container">
+            <div class="sky-wrap">
 
-            </ul>
+            </div>
         </section>
     </main>
     <footer>

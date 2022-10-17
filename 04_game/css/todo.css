@@ -3,7 +3,6 @@
   align-items:center;
   padding-left:50px;
 }
-
 .addTodoBtn {
   border-radius:50%;
   padding:5px 6px;
@@ -12,12 +11,6 @@
   border:1px solid black; 
   cursor: pointer;
 }
-
-.addTodoBtn:hover {
-  transform:scale(1.2); /* 1.2배 확대 */
-  transition:0.5s; /* 부드럽게 */
-}
-
 .default-input {
   padding:10px;
   outline:none;
@@ -27,7 +20,17 @@
   border:3px solid black;
 }
 
+.addTodoBtn:hover {
+  transform:scale(1.2); /* 1.2배 확대 */
+  transition:0.5s; /* 부드럽게 */
+}
+
 #list-box {
   height:300px;
   overflow: scroll;
+}
+
+#list-box li {
+  cursor: pointer;
+  padding: 15px;
 }

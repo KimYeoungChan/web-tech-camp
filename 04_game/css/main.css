@@ -1,12 +1,16 @@
 * {
-  list-style:none;
-  text-decoration:none;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   font-family: 'Noto Serif KR', serif;
   overflow: hidden;
-  margin:0;
+  margin: 0;
 }
 
 header {
@@ -14,42 +18,76 @@ header {
 }
 
 header > nav {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  border-bottom:1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .logo {
-  width:50px;
+  width: 50px;
 }
 
-header > nav > ul > li {
-  display:inline-block;
-  padding:0 10px;
-}
+header> nav >ul > li {
+  display: inline-block;
+  padding: 0 10px;
+} 
 
-header > nav > ul > li > a {
-  color:black;
+header> nav >ul > li > a {
+  color: black;
 }
 
 main {
-  text-align:center;
+  text-align: center;
 }
 
 footer {
-  background-color:rgb(228,223,223);
+  background-color: rgb(244, 244, 244);
+  border-top: 1px solid rgb(218, 218, 218);
   position: absolute;
-  border-top:1px solid rgb(218,218,218);
-  bottom:0;
-  width:100%;
-  padding:30px 50px;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 50px;
   font-size: 0.8rem;
-  color:gray;
+  color: gray;
 }
 
 .default-btn {
-  padding:5px 15px;
-  background-color:rgb(225,225,225);
-  border:1px solid black;
-  border-radius:3px;
+  padding: 5px 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .logo-wrap {width:100%;}
+  .logo {padding:10px; width: 40px;}
+  nav {
+    display: flex;
+    flex-direction:column;
+  }
+  header > nav > ul {
+    display:none;
+    padding: 0;
+    margin-top:-10px;
+  }
+  header > nav > ul.show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header > nav > ul > li {
+    margin:10px 0;
+  }
+  .toggleBtn {
+    display: block;
+    position: absolute;
+    top: 15px; right:10px;
+    font-size: 24px;
+  }
 }

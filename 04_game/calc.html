@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>할일목록</title>
+    <title>연산게임</title>
     <script src="https://kit.fontawesome.com/3624917c4f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/todo.css">
     <script src="js/score.js" defer></script>
-    <script src="js/todo.js" defer></script>
+    <script src="js/calc.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,16 +29,14 @@
     </header>
     <main>
         <section class="score-container">
-            <p>칭찬점수:<span id="score-num">0</span>점</p>
+            <p>연산점수:<span id="score-num">0</span>점</p>
             <button id="saveScoreBtn" class="default-btn">점수저장</button>
         </section>
         <section>
-            <h2>할일목록</h2>
+            <h2>곱하기</h2>
+            <h1>9 X 8 = ?</h1>
             <input class="default-input" type="text" />
-            <button class="addTodoBtn">➕</button>
-            <ul id="list-box">
-
-            </ul>
+            <button id="submitBtn" class="default-btn">제출</button>
         </section>
     </main>
     <footer>

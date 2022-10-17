@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>할일목록</title>
+    <title>반응속도</title>
     <script src="https://kit.fontawesome.com/3624917c4f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/speed.css">
     <script src="js/score.js" defer></script>
-    <script src="js/todo.js" defer></script>
+    <script src="js/speed.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,16 +29,18 @@
     </header>
     <main>
         <section class="score-container">
-            <p>칭찬점수:<span id="score-num">0</span>점</p>
-            <button id="saveScoreBtn" class="default-btn">점수저장</button>
+            당신의 반응속도: <span id="result">-</span>
         </section>
-        <section>
-            <h2>할일목록</h2>
-            <input class="default-input" type="text" />
-            <button class="addTodoBtn">➕</button>
-            <ul id="list-box">
-
-            </ul>
+       <section class="container">
+            <div class="space">
+                <img src="images/space.png">
+            </div>
+            <div class="contents_box">
+                <p class="start_text">UFO를 눌러 시작!</p>
+                <div class="content wait">           
+                </div>
+                <img class="rocket" src="images/rocket.png" />
+            </div>
         </section>
     </main>
     <footer>
